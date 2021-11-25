@@ -1,1 +1,4 @@
-tile.suv:testpath.name=testPath			#
+tile.suv:testpath.name=テスト道		#
+tile.suv:woodpath.name=木の道		#
+tile.suv:stonepath.name=石の道		#
+tile.suv:lightpath.name=光る道		#

@@ -6,6 +6,18 @@
     "texture_data": {
       "suv:testpath": {
         "textures": "textures/suv/testpath"
+      },
+      "suv:woodpath": {
+        "textures": "textures/suv/woodpath"
+      },
+      "suv:stonepath": {
+        "textures": "textures/suv/stonepath"
+      },
+      "suv:lightpath": {
+        "textures": "textures/suv/lightpath"
+      },
+      "suv:lightpath_front": {
+        "textures": "textures/suv/lightpath_front"
       }
     }
   }
