@@ -1,0 +1,47 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+      "description": {
+        "identifier": "suv:hot_potato",
+        "category": "Equipment"
+      },
+  
+      "components": {
+        "minecraft:icon": {
+          "texture": "suv:hot_potato"
+        },
+        "minecraft:use_duration": 1,
+        "minecraft:use_animation": "eat",
+        "minecraft:food": {
+          "nutrition": 5,
+          "can_always_eat": true,
+          "saturation_modifier": "high",
+          "on_consume": {
+            "event": "suv:on_consumed"
+          }
+        }
+      },
+      "events": {
+        "suv:on_consumed": {
+          "sequence": [
+            {
+              "add_mob_effect": {
+                "effect": "speed",
+                "target": "holder",
+                "duration": 300,
+                "amplifier": 2
+              }
+            },
+            {
+              "add_mob_effect": {
+                "effect": "haste",
+                "target": "holder",
+                "duration": 300,
+                "amplifier": 2
+              }
+            }
+          ]
+        }
+      }
+    }
+  }

@@ -1,0 +1,47 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+      "description": {
+        "identifier": "suv:burned_potato",
+        "category": "Equipment"
+      },
+  
+      "components": {
+        "minecraft:icon": {
+          "texture": "suv:burned_potato"
+        },
+        "minecraft:use_duration": 1,
+        "minecraft:use_animation": "eat",
+        "minecraft:food": {
+          "nutrition": 1,
+          "can_always_eat": true,
+          "saturation_modifier": "low",
+          "on_consume": {
+            "event": "suv:on_consumed"
+          }
+        }
+      },
+      "events": {
+        "suv:on_consumed": {
+          "sequence": [
+            {
+              "add_mob_effect": {
+                "effect": "hunger",
+                "target": "holder",
+                "duration": 30,
+                "amplifier": 1
+              }
+            },
+            {
+              "add_mob_effect": {
+                "effect": "nausea",
+                "target": "holder",
+                "duration": 10,
+                "amplifier": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  }

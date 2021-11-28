@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "SUV_res",
+    "texture_name": "atlas.items",
+    "texture_data": {
+      "suv:hot_potato": {
+        "textures": "textures/suv/hot_potato"
+      },
+      "suv:burned_potato": {
+        "textures": "textures/suv/burned_potato"
+      }
+    }
+  }

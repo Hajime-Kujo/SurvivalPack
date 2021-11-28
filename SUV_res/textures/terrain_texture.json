@@ -10,14 +10,35 @@
       "suv:woodpath": {
         "textures": "textures/suv/woodpath"
       },
+      "suv:woodpathhalf": {
+        "textures": "textures/suv/woodpath_half"
+      },
       "suv:stonepath": {
         "textures": "textures/suv/stonepath"
+      },
+      "suv:stonepathhalf": {
+        "textures": "textures/suv/stonepath_half"
       },
       "suv:lightpath": {
         "textures": "textures/suv/lightpath"
       },
       "suv:lightpath_front": {
         "textures": "textures/suv/lightpath_front"
+      },
+      "suv:discoloredpath_top": {
+        "textures": "textures/suv/discolored_path_top"
+      },
+      "suv:discoloredpath_side": {
+        "textures": "textures/suv/discolored_path_side"
+      },
+      "suv:potatoblock": {
+        "textures": "textures/suv/potatoblock"
+      },
+      "suv:hot_potato": {
+        "textures": "textures/suv/hot_potato"
+      },
+      "suv:burned_potato": {
+        "textures": "textures/suv/burned_potato"
       }
     }
   }

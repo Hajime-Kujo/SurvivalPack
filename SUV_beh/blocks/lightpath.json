@@ -8,9 +8,10 @@
         }
       },
       "components": {
+        "tag:suv:path": {},
         "tag:wood": {},
         "minecraft:loot": "loot_tables/blocks/lightpath.json",
-        "minecraft:destroy_time": 0.1,
+        "minecraft:destroy_time": 0.3,
         "minecraft:explosion_resistance": 3,
         "minecraft:friction": 0.7,
         "minecraft:block_light_absorption": 0,
@@ -30,35 +31,13 @@
           "event": "suv:block_placed"
         },
         "minecraft:entity_collision": true,
-        "minecraft:pick_collision": true,
-        "minecraft:on_step_on": {
-            "event":"suv:remove_poison",
-            "target": "player"
-        },
-        "minecraft:on_step_off": {
-            "event":"suv:get_poison",
-            "target": "player"
-        }
+        "minecraft:pick_collision": true
       },
       "events": {
         "suv:block_placed": {
           "set_block_property": {
             "suv:block_facing": "query.cardinal_facing_2d"
           }
-        },
-        "suv:get_poison": {
-            "add_mob_effect": {
-                "amplifier": 1,
-                "duration": 10000,
-                "effect": "poison",
-                "target": "self"
-            }
-        },
-        "suv:remove_poison": {
-            "remove_mob_effect": {
-                "effect": "poison",
-                "target": "self"
-            }
         }
       },
       "permutations": [

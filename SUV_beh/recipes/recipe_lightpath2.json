@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+      "description": {
+      "identifier": "suv:recipeLP2"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "ingredients": [
+        {
+          "item": "minecraft:carved_pumpkin"
+        },
+        {
+          "item": "minecraft:torch"
+        },
+        {
+          "item": "suv:woodpath"
+        }
+      ],
+      "result": {
+        "item": "suv:lightpath"
+      }
+    }
+  }

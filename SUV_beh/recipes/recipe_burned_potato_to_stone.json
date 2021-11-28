@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+        "identifier": "suv:recipeOPburnedpotato"
+      },
+  
+      "tags": ["crafting_table"],
+      "pattern": [
+        "XX",
+        "XX"
+      ],
+      "key": {
+        "X": {
+          "item": "suv:burned_potato"
+        }
+      },
+      "result": {
+        "item": "minecraft:ancient_debris",
+        "count": 1
+      }
+    }
+  }

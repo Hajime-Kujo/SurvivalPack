@@ -1,0 +1,17 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+      "description": {
+        "identifier": "suv:burned_potato"
+      },
+      "tags": ["furnace", "smoker", "campfire"],
+      "input": {
+        "item": "suv:hot_potato",
+        "count": 1
+      },
+      "output": {
+        "item": "suv:burned_potato",
+        "count": 1
+      }
+    }
+  }

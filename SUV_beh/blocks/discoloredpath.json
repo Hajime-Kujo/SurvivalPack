@@ -2,21 +2,32 @@
     "format_version": "1.16.100",
     "minecraft:block": {
       "description": {
-        "identifier": "suv:woodpath"
+        "identifier": "suv:discoloredpath",
+        "properties": {
+          "suv:block_facing": [2, 3, 4, 5]
+        }
       },
       "components": {
         "tag:suv:path": {},
         "tag:wood": {},
-        "minecraft:loot": "loot_tables/blocks/woodpath.json",
+        "minecraft:loot": "loot_tables/blocks/discoloredpath.json",
         "minecraft:destroy_time": 0.3,
         "minecraft:explosion_resistance": 3,
-        "minecraft:friction": 0.5,
+        "minecraft:friction": 2.0,
         "minecraft:block_light_absorption": 0,
         "minecraft:block_light_emission": 0,
         "minecraft:unit_cube": {},
         "minecraft:material_instances": {
           "*": {
-            "texture": "suv:woodpath",
+            "texture": "suv:discoloredpath_side",
+            "render_method": "opaque"
+          },
+          "up": {
+            "texture": "suv:discoloredpath_top",
+            "render_method": "opaque"
+          },
+          "down": {
+            "texture": "suv:discoloredpath_top",
             "render_method": "opaque"
           }
         },

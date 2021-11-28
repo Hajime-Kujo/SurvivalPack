@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+        "identifier": "suv:recipetorchA"
+      },
+  
+      "tags": ["crafting_table"],
+      "pattern": [
+        "Y",
+        "X"
+      ],
+      "key": {
+        "Y": {
+          "item": "suv:hot_potato"
+        },
+        "X": {
+          "item": "minecraft:stick"
+        }
+      },
+      "result": {
+        "item": "minecraft:torch",
+        "count": 4
+      }
+    }
+  }

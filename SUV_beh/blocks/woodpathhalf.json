@@ -2,26 +2,32 @@
     "format_version": "1.16.100",
     "minecraft:block": {
       "description": {
-        "identifier": "suv:woodpath"
+        "identifier": "suv:woodpathhalf"
       },
       "components": {
         "tag:suv:path": {},
         "tag:wood": {},
-        "minecraft:loot": "loot_tables/blocks/woodpath.json",
+        "minecraft:loot": "loot_tables/blocks/woodpathhalf.json",
         "minecraft:destroy_time": 0.3,
         "minecraft:explosion_resistance": 3,
         "minecraft:friction": 0.5,
         "minecraft:block_light_absorption": 0,
         "minecraft:block_light_emission": 0,
-        "minecraft:unit_cube": {},
+        "minecraft:geometry": "geometry.halfpath",
         "minecraft:material_instances": {
           "*": {
-            "texture": "suv:woodpath",
+            "texture": "suv:woodpathhalf",
             "render_method": "opaque"
           }
         },
-        "minecraft:entity_collision": true,
-        "minecraft:pick_collision": true
+        "minecraft:entity_collision": {
+          "origin": [-8, 0, -8],
+          "size": [16, 8, 16]
+        },
+        "minecraft:pick_collision": {
+          "origin": [-8, 0, -8],
+          "size": [16, 8, 16]
+        }
       }
     }
   }

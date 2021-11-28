@@ -1,0 +1,22 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+        "identifier": "suv:recipeSPH"
+      },
+  
+      "tags": ["crafting_table"],
+      "pattern": [
+        "XXX"
+      ],
+      "key": {
+        "X": {
+          "item": "suv:stonepath"
+        }
+      },
+      "result": {
+        "item": "suv:stonepathhalf",
+        "count": 6
+      }
+    }
+  }

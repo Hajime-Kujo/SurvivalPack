@@ -2,13 +2,12 @@
     "format_version": "1.16.100",
     "minecraft:block": {
       "description": {
-        "identifier": "suv:woodpath"
+        "identifier": "suv:potatoblock"
       },
       "components": {
-        "tag:suv:path": {},
         "tag:wood": {},
-        "minecraft:loot": "loot_tables/blocks/woodpath.json",
-        "minecraft:destroy_time": 0.3,
+        "minecraft:loot": "loot_tables/blocks/potatoblock",
+        "minecraft:destroy_time": 1,
         "minecraft:explosion_resistance": 3,
         "minecraft:friction": 0.5,
         "minecraft:block_light_absorption": 0,
@@ -16,7 +15,7 @@
         "minecraft:unit_cube": {},
         "minecraft:material_instances": {
           "*": {
-            "texture": "suv:woodpath",
+            "texture": "suv:potatoblock",
             "render_method": "opaque"
           }
         },

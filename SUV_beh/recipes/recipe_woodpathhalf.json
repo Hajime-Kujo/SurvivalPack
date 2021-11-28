@@ -1,0 +1,22 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+        "identifier": "suv:recipeWPH"
+      },
+  
+      "tags": ["crafting_table"],
+      "pattern": [
+        "XXX"
+      ],
+      "key": {
+        "X": {
+          "item": "suv:woodpath"
+        }
+      },
+      "result": {
+        "item": "suv:woodpathhalf",
+        "count": 6
+      }
+    }
+  }

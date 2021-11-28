@@ -5,9 +5,10 @@
         "identifier": "suv:stonepath"
       },
       "components": {
+        "tag:suv:path": {},
         "tag:stone": {},
         "minecraft:loot": "loot_tables/blocks/stonepath.json",
-        "minecraft:destroy_time": 0.1,
+        "minecraft:destroy_time": 0.3,
         "minecraft:explosion_resistance": 6,
         "minecraft:friction": 0.5,
         "minecraft:block_light_absorption": 0,
@@ -20,30 +21,20 @@
           }
         },
         "minecraft:entity_collision": true,
-        "minecraft:pick_collision": true,
-        "minecraft:on_step_on": {
-            "event":"suv:remove_poison",
-            "target": "player"
-        },
-        "minecraft:on_step_off": {
-            "event":"suv:get_poison",
-            "target": "player"
-        }
+        "minecraft:pick_collision": true
       },
       "events": {
         "suv:get_poison": {
-            "add_mob_effect": {
-                "amplifier": 1,
-                "duration": 10000,
-                "effect": "poison",
-                "target": "self"
+            "run_command":{
+              "command":"effect @s[type=player] poison 10000 2 true",
+              "target": "other"
             }
         },
         "suv:remove_poison": {
-            "remove_mob_effect": {
-                "effect": "poison",
-                "target": "self"
-            }
+          "run_command":{
+            "command":"effect @s[type=player] poison 0 2 true",
+            "target": "other"
+          }
         }
       }
     }

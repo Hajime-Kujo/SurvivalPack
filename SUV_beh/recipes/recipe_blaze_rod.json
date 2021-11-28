@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+        "identifier": "suv:recipeBlazeRodA"
+      },
+  
+      "tags": ["crafting_table"],
+      "pattern": [
+        "Y",
+        "Y"
+      ],
+      "key": {
+        "Y": {
+          "item": "suv:hot_potato"
+        }
+      },
+      "result": {
+        "item": "minecraft:blaze_rod",
+        "count": 4
+      }
+    }
+  }

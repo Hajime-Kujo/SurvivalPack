@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+        "identifier": "suv:recipePB"
+      },
+  
+      "tags": ["crafting_table"],
+      "pattern": [
+        "YYY",
+        "YYY",
+        "YYY"
+      ],
+      "key": {
+        "Y": {
+          "item": "minecraft:potato"
+        }
+      },
+      "result": {
+        "item": "suv:potatoblock",
+        "count": 8
+      }
+    }
+  }

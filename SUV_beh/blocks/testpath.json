@@ -26,28 +26,26 @@
         "minecraft:entity_collision": true,
         "minecraft:pick_collision": true,
         "minecraft:on_step_on": {
-            "event":"suv:remove_poison",
-            "target": "player"
+          "event":"suv:remove_poison",
+          "target": "other"
         },
         "minecraft:on_step_off": {
             "event":"suv:get_poison",
-            "target": "player"
+            "target": "other"
         }
       },
       "events": {
         "suv:get_poison": {
-            "add_mob_effect": {
-                "amplifier": 1,
-                "duration": 10000,
-                "effect": "poison",
-                "target": "self"
+            "run_command":{
+              "command":"effect @s[type=player] poison 10000 2 true",
+              "target": "other"
             }
         },
         "suv:remove_poison": {
-            "remove_mob_effect": {
-                "effect": "poison",
-                "target": "self"
-            }
+          "run_command":{
+            "command":"effect @s[type=player] poison 0 2 true",
+            "target": "other"
+          }
         }
       }
     }
