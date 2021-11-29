@@ -2,8 +2,8 @@
     "format_version": 2,
     "header": {
       "name": "SUV_res",
-      "description": "",
-      "version": [ 1, 0, 0 ],
+      "description": "first release!",
+      "version": [ 1, 0, 1 ],
       "uuid": "877aed5e-6fad-4046-a40b-df7650f1417b",
       "min_engine_version": [ 1, 13, 0 ]
     },
@@ -11,7 +11,7 @@
       {
         "type": "resources",
         "description": "",
-        "version": [ 1, 0, 0 ],
+        "version": [ 1, 0, 1 ],
         "uuid": "f4af2210-9ce1-4161-bb22-da818a631c16"
       }
     ]
