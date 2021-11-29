@@ -7,6 +7,9 @@
       },
       "suv:burned_potato": {
         "textures": "textures/suv/burned_potato"
+      },
+      "suv:iron_pie": {
+        "textures": "textures/suv/iron_pumpkin_pie"
       }
     }
   }

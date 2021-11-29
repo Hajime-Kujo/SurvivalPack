@@ -6,7 +6,7 @@
             "states" : {
                 "default" : {
                     "on_entry": [
-                        "/effect @s poison 0 1 true"
+                        "/effect @s poison 0 5 true"
                      ],
                     "transitions" : [
                         { "poison" : "!(query.relative_block_has_any_tag(0,-2,0,'suv:path') || query.is_sleeping)"}
@@ -14,7 +14,7 @@
                 },
                 "poison" : {
                     "on_entry": [
-                        "/effect @s poison 10000 1 true"
+                        "/effect @s poison 10000 5 true"
                      ],
                     "transitions" : [
                         { "default" : "query.relative_block_has_any_tag(0,-2,0,'suv:path') || query.is_sleeping" }
